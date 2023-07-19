@@ -17,7 +17,7 @@ facebook_friends=["Loai","Kenda","Avigail", "George", "Fouad", "Gi"]
 def login():
 	if request.method == 'GET':
 		return render_template('login.html')
-	else: 
+	else:
 		username = request.form['username']
 		password = request.form['password']
 		if username == "siwarha" and password == '123':
