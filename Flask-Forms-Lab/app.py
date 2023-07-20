@@ -32,7 +32,7 @@ def home():
 
 
 @app.route('/friend_exists/<string:name>')
-ddef friend_exists(name):
+def friend_exists(name):
   if name in facebook_friends:
     return render_template('friend_exists.html', is_friend=True)
   else:
